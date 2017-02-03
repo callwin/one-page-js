@@ -1,0 +1,78 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  width: auto;
+}
+
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+
+
+
+
+
+.video-container {
+	position:relative;
+	padding-bottom: 	56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.404 {
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	height: 100%;
+
+}
+.cover-heading {
+	text-align: center;
+}
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.cover-container {
+	text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (orientation: portrait) {
+  img.logo { max-width: 70%; 
+	}
+}
+
+

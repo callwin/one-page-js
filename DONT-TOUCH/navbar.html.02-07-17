@@ -1,0 +1,90 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+	      <div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
+		<div class='brand-centered'>
+        	<a class="navbar-brand" href="#"><img class="logo" src="css/top.png" alt="LIFEGROUPS"></a>
+		</div>
+      	</div>
+        <div id="navbar1" class="navbar-collapse collapse">
+    
+          <ul class="nav navbar-nav navbar-left">
+           <li class="dropdown active" > 
+	   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="lessons">LESSONS<span class="caret"></span></a>
+              <ul id='lessonLinks' class="dropdown-menu">
+		<li class="divider"></li>
+		<li class="dropdown-header" id="semester">FIRST SEMESTER</li>
+
+              </ul>
+           
+            </li>
+          </ul>
+	 <ul class="nav navbar-nav navbar-right">
+
+            <li id="switch"></li>
+	    <li><a  role="button" href='logout.php'>LOGOUT</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <script>
+
+	console.log(rrr.cl() + 'from navbar');
+	if( rrr.getLang() == 'en') {
+		$('li#switch').empty().append('<a id="ru" role="button" href="' + rrr.cl() + '" >РУССКИЙ</a>');
+		$('a#lessons').text('LESSONS');
+		$('li#semester').text('FIRST SEMESTER');	
+	
+		var cw = Number(rrr.currentWeek()) + 1;
+		function addMenuLinks(element) {
+			var wlink = element.week;
+			var wlesson = element.etopic;
+			wlesson = 'WEEK ' + wlink + ': ' + wlesson;
+			$('ul#lessonLinks').append('<li><a href="#week/'+ wlink + '">' + wlesson + '</a></li>');
+		};
+		rrr.info.slice(0, cw).forEach( addMenuLinks );
+
+	}
+	else  if (rrr.getLang() == 'ru') {
+
+		$('li#switch').empty().append( '<a id="en" role="button" href="' + rrr.cl() + '" >ENGLISH</a>');
+		$('a#lessons').text('УРОКИ');	
+		$('li#semester').text('ПЕРВЫЙ СЕМЕСТР');
+		var cw = Number(rrr.currentWeek()) +1;
+		function addMenuLinks(element) {
+			var wlink = element.week;
+			var wlesson = element.topic;
+			wlesson = 'НЕДЕЛЯ ' + wlink + ': ' + wlesson;
+			$('ul#lessonLinks').append('<li><a href="#week/'+ wlink + '">' + wlesson + '</a></li>');
+		console.log(element.week + 'from ru if statement');
+
+		};
+		rrr.info.slice(0, cw).forEach( addMenuLinks );
+	
+	}
+	else {
+		rrr.setLang('ru');
+		$('li#switch').empty().append( '<a id="en" role="button" href="' + rrr.cl() + '" >English</a>');
+
+	};
+
+	$( '#ru' ).click( function() {
+		rrr.setLang('ru');
+		$('li#switch').empty().append( '<a id="en" role="button" href="' + rrr.cl() + '" >English</a>');	
+	//	window.location.reload();
+		rrr.appOnReady();
+	});
+	$( '#en' ).click( function() {
+   		rrr.setLang('en');
+		$('li#switch').empty().append('<a id="ru" role="button" href="' + rrr.cl() + '" >Русский</a>');
+		rrr.appOnReady();
+	} );
+
+</script>

@@ -1,0 +1,129 @@
+<?php
+	session_start();
+                          
+	if($_SESSION['sid']!=session_id())
+	{
+                header("location:login.php");
+		
+	}
+?>
+
+<html>
+<head>
+ <meta charset="UTF-8"> 
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='st.css' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src='rrr.js'></script>
+  <script src="js/js.cookie.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/carousel.css">
+   <link href="css/navbar-fixed-top.css" rel="stylesheet">
+   <link href="css/footer.css" rel="stylesheet" type="text/css">
+   <link href="css/blog.css" rel="stylesheet" type="text/css">
+   <title>LIFEGROUPS: House of Bread Church</title>
+
+
+</head>
+<body>
+
+
+
+<div class='markup'>
+  <div class='navigation'></div>
+  <div class='view-container container'> </div>
+</div>
+
+
+<div class='templates'>
+	<div class='ruweek-view'>
+		<div class='container'><br><br>
+			<div class="video-container" data-name="video"></div>
+		</div>
+		<div class="blog-main">
+			<div  class="blog-header">
+        			<h1 class="page-title" >Неделя: №
+					<span class="page-title" data-name="week"></span>
+				</h1>
+				<h1  class="blog-title" data-name="topic"><span>
+			</div>
+			<div class="page-header">
+
+				<p class="blog-post-meta" data-name="speaker"></p>
+				<p class="lead blog-description" data-name="lead"></p>
+			</div>
+			<div id='post' class="blog-post"></div><!-- /.blog-post -->
+		</div>
+</div>
+<div class='templates'>
+		<div class='enweek-view'>
+			<div class='container'>
+				<div class="video-container" data-name="evideo"></div>
+			</div>
+			<div class="blog-main">
+
+				<div  class="blog-header">
+        			<h1 class="page-title" >Week: #
+					<span class="page-title" data-name="week"></span>
+				</h1>
+				<h1  class="blog-title" data-name="etopic">
+			</div>
+			<div class="page-header">
+
+				<p class="blog-post-meta" data-name="espeaker"></p>
+				<p class="lead blog-description" data-name="elead"></p>
+			</div>
+			<div id='post' class="blog-post"></div>
+		</div>		
+
+	</div>
+</div>
+
+<div class='templates'>
+	<div class='navlist'>
+		<li ><a class="menuLink" href="#"></a></li>
+	</div>
+</div>
+
+
+
+<div class='templates'>
+    <div class='404' >
+	<div class="cover-container">
+
+          <div class="inner cover">
+            <h1 class="cover-heading">You've reached the end. There's nothing  in here</h1>
+            <h1 class="cover-heading">404</h1>
+            <p class="lead">Seems like the page you are looking for is not available yet.</p>
+            <p class="lead"> We're working on it.</p>
+            <p class="lead">Please come here later.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Let's  bring you home</a>
+            </p>
+          </div>
+       </div>  
+
+     </div>
+</div>
+
+
+
+<footer class="footer"></footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  <script type='text/javascript'>
+    $(window).ready(rrr.appOnReady());
+  </script>
+</body>
+</html>

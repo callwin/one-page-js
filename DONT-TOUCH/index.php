@@ -24,7 +24,6 @@
    <link href="css/navbar-fixed-top.css" rel="stylesheet">
    <link href="css/footer.css" rel="stylesheet" type="text/css">
    <link href="css/blog.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900' rel='stylesheet' type='text/css'>
    <title>LIFEGROUPS: House of Bread Church</title>
 
 
@@ -40,53 +39,46 @@
 
 
 <div class='templates'>
-		<div class='ruweek-view'>
-			<div class='container'><br><br>
-				<div class="video-container" data-name="video"></div>  
-			</div>
-			<div class="blog-main">
-
-				<div  class="blog-header"><div style="height: 40px; width: 150px; background: rgba(0, 145, 173, .55);">
-        			<h1 class="page-title" style="font-size:30px; color:white; font-family: 'Roboto'; font-size: 25px; font-weight: 400; letter-spacing: 2px; text-align:center; position: relative;
-top: 20%;">НЕДЕЛЯ
+	<div class='ruweek-view'>
+		<div class='container'>
+			<div class="video-container" data-name="video"></div>
+		</div>
+		<div class="blog-main">
+			<div  class="blog-header">
+        			<h1 class="page-title" >Неделя: &#x2116; 
 					<span class="page-title" data-name="week"></span>
-				</h1></div>
-				<h1  class="blog-title" data-name="topic" style="font-size:45px; text-transform: uppercase; color:#0091AD; margin-bottom: -30px; font-family: 'Roboto'; font-weight: 400; letter-spacing:2px;"></h1>
+				</h1>
+				<h1  class="blog-title" data-name="topic"></h1>
 			</div>
 			<div class="page-header">
 
-				<i><p class="blog-post-meta" data-name="speaker" style="font-size:20px; font-family: 'Roboto'; font-weight: 400; letter-spacing:1px;"></p>
-				<p class="lead blog-description" data-name="lead"></p></i>
+				<p class="blog-post-meta" data-name="speaker"></p>
+				<p class="lead blog-description" data-name="lead"></p>
 			</div>
-			<div id='post' class="blog-post" style="color:#000; font-family: 'Roboto'; font-weight: 400; letter-spacing:1px; border-radius: 0px;"></div>
+			<div id='post' class="blog-post"></div><!-- /.blog-post -->
 		</div><!--// blog-main //-->   
-       </div><!--// enweek-view //-->
+       </div><!--// ruweek-view //-->
 </div><!--// templates //-->
-
-
-
-
 
 <div class='templates'>
 		<div class='enweek-view'>
 			<div class='container'><br><br>
-				<div class="video-container" data-name="evideo"></div>  
+				<div class="video-container" data-name="evideo"></div>
 			</div>
 			<div class="blog-main">
 
-				<div  class="blog-header"><div style="height: 40px; width: 130px; background: rgba(0, 145, 173, .55);">
-        			<h1 class="page-title" style="font-size:30px; color:white; font-family: 'Roboto'; font-size: 25px; font-weight: 400; letter-spacing: 2px; text-align:center; position: relative;
-top: 20%;">WEEK
+				<div  class="blog-header">
+        			<h1 class="page-title" >Week: #
 					<span class="page-title" data-name="week"></span>
-				</h1></div>
-				<h1  class="blog-title" data-name="etopic" style="font-size:45px; text-transform: uppercase; color:#0091AD; margin-bottom: -30px; font-family: 'Roboto'; font-weight: 400; letter-spacing:2px;"></h1>
+				</h1>
+				<h1  class="blog-title" data-name="etopic"></h1>
 			</div>
 			<div class="page-header">
 
-				<i><p class="blog-post-meta" data-name="espeaker" style="font-size:20px; font-family: 'Roboto'; font-weight: 400; letter-spacing:1px;"></p>
-				<p class="lead blog-description" data-name="elead"></p></i>
+				<p class="blog-post-meta" data-name="espeaker"></p>
+				<p class="lead blog-description" data-name="elead"></p>
 			</div>
-			<div id='post' class="blog-post" style="color:#000; font-family: 'Roboto'; font-weight: 400; letter-spacing:1px; border-radius: 0px;"></div>
+			<div id='post' class="blog-post"></div>
 		</div><!--// blog-main //-->   
        </div><!--// enweek-view //-->
 </div><!--// templates //-->
